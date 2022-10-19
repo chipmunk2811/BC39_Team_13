@@ -2,15 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.4s;
 }
 
 html,
 body {
     font-family: 'Jost', sans-serif;
-    background-color: white;
     font-size: 16px;
-    color: #212529;
     line-height: 1.5;
+    background: var(--bg-color);
+    color: var(--font-color);
 }
 
 h6 {
@@ -25,6 +26,7 @@ h1 {
     font-size: 40px;
     font-weight: 500;
     line-height: 48px;
+    color: var(--heading-color);
 }
 
 ul {
@@ -36,16 +38,18 @@ a {
 }
 
 /* Header */
+header {
+    background-color: var(--bg-color);
+    display: grid;
+    align-items: center;
+}
+
 .header {
     position: fixed;
     top: 40px;
     left: 0;
     right: 0;
     z-index: 9999;
-    background-color: white;
-    height: 90px;
-    display: grid;
-    align-items: center;
 }
 
 .header .navbar .navbar-brand {
@@ -55,8 +59,8 @@ a {
 }
 
 .header .nav-item .nav-link {
-    color: #000c04;
-    padding: 14px 10px;
+    color: var(--heading-color);
+    padding: 5px 10px;
     font-size: 1.2em;
     font-weight: 400;
 }
@@ -68,7 +72,7 @@ a {
 }
 
 .header .theme-switch-wrapper i {
-    color: black;
+    color: var(--heading-color);
     font-size: 1.5rem;
     padding: 0px 15px;
 }
@@ -97,11 +101,16 @@ a {
 }
 
 .navbar-toggler-icon.fa {
-    line-height: 1.2em;
+    line-height: 1.55em;
     color: white;
-    line-height: 34px;
     border-radius: 5px;
 }
+
+.header .nav-item {
+    text-align: center;
+}
+
+
 
 /* Carousel */
 .carousel-item {
@@ -208,6 +217,10 @@ a {
 
 
 /* About Us */
+.aboutus {
+    background-color: var(--bg-color);
+}
+
 .aboutus__tittle {
     text-align: center;
     width: 700px;
@@ -217,12 +230,13 @@ a {
 .aboutus__tittle p {
     font-size: 1.2rem;
     line-height: 28px;
+    color: var(--font-color);
 }
 
 .aboutus a {
     border-bottom: 2px solid #189a46;
     font-size: 1.0625rem;
-    color: #000c04;
+    color: var(--heading-color);
     text-decoration: none;
     font-weight: 600;
     transition: all .3s;
@@ -233,13 +247,13 @@ a {
 }
 
 .aboutus__content {
-    background-color: #f9f7fe;
+    background-color: var(--bg-light);
 }
 
 .aboutus__box {
     padding: 40px 30px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--bg-color);
     position: relative;
     margin-bottom: 30px;
 }
@@ -255,14 +269,14 @@ a {
     margin-top: 25px;
     margin-bottom: 15px;
     display: block;
-    color: black;
+    color: var(--heading-color);
     border-bottom: none;
 }
 
 .aboutus__box p {
     font-size: 1.2em;
     line-height: 28px;
-    color: #696969;
+    color: var(--font-color);
 }
 
 .aboutus__box:hover {
@@ -270,6 +284,10 @@ a {
 }
 
 /* Chosse Us */
+.chosseus {
+    background-color: var(--bg-color);
+}
+
 .chosseus__img img {
     width: 100%;
     border-radius: 10px;
@@ -281,13 +299,13 @@ a {
 
 .chosseus__tittle p {
     line-height: 1.5rem;
-    color: #696969;
+    color: var(--para-color);
     margin: 0.9375rem 0 2.1875rem 0;
 }
 
 .chosseus__tittle li {
     line-height: 1.625rem;
-    color: #000c04;
+    color: var(--heading-color);
     margin: 0.9375rem 0;
     font-weight: 600;
 }
@@ -412,25 +430,59 @@ a {
     }
 }
 
-@media (min-height: 10px){
-    .carousel-item {
-        height: 100vh;
-    }
-}
-@media (min-height: 450px){
+@media (min-height: 10px) {
     .carousel-item {
         height: 100vh;
     }
 }
 
-@media (min-height: 652px){
+@media (min-height: 450px) {
+    .carousel-item {
+        height: 100vh;
+    }
+}
+
+@media (min-height: 652px) {
     .carousel-item {
         height: 60vh;
     }
 }
 
-@media (min-height: 750px){
+@media (min-height: 750px) {
     .carousel-item {
         height: 40vh;
     }
+}
+
+
+#theme_switch_dark {
+    --primary-color: #189A46;
+    --secondary-color: #f53626;
+    --font-color: #afafaf;
+    --bg-color: #151515;
+    --heading-color: #ddd;
+    --border-color: #333;
+    --border-light: #444;
+    --nav-color: #fff;
+    --bg-light: #222;
+    --dropdown-color: #151515;
+    --iframe-filter: grayscale(100%);
+    --widget-bg: #131617;
+
+}
+
+#theme_switch_light {
+    --primary-color: #189A46;
+    --secondary-color: #f53626;
+    --font-color: #696969;
+    --bg-color: #fff;
+    --heading-color: #000c04;
+    --border-radius: 10px;
+    --border-color: #ddd;
+    --border-light: #f0f3f0;
+    --nav-color: #292922;
+    --dropdown-color: #fff;
+    --bg-light: rgba(147, 107, 232, 0.05);
+    --iframe-filter: grayscale(0%);
+    --widget-bg: #3f3a64;
 }

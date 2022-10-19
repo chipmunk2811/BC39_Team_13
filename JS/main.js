@@ -10,6 +10,14 @@ document.getElementById("theme_switch").onclick = function () {
         themelight.id = "theme_dark"
     }
 
+
+    var themeswitchdark = document.getElementById("theme_switch_dark")
+    var themeswitchlight = document.getElementById("theme_switch_light")
+    if(themeswitchdark){
+        themeswitchdark.id="theme_switch_light"
+    }else{
+        themeswitchlight.id="theme_switch_dark"
+    }
 }
 
 
