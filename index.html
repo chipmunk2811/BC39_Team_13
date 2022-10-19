@@ -27,8 +27,8 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
+    <header class="header active">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-md">
                 <!-- Brand -->
                 <a class="navbar-brand" href="#">Pooch Care
@@ -71,8 +71,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="theme-switch-wrapper">
-                    <i class="fa fa-moon"></i>
+
+                <div class="theme-switch-wrapper" id="theme_switch">
+                    <i id="theme_dark" class="fa fa-moon"></i>
                 </div>
             </nav>
         </div>
@@ -94,7 +95,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="overlay"></div>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="carousel-caption">
                             <h3>Quality Things for Loving Pets</h3>
                             <p>Keeps your Pet Smiling</p>
@@ -105,7 +106,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="overlay"></div>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="carousel-caption ml-lg-auto">
                             <h3>Quality Things for Loving Pets</h3>
                             <p>Keeps your Pet Smiling</p>
@@ -116,7 +117,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="overlay"> </div>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="carousel-caption">
                             <h3>Quality Things for Loving Pets</h3>
                             <p>Keeps your Pet Smiling</p>
@@ -127,7 +128,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="overlay"> </div>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="carousel-caption ml-lg-auto">
                             <h3>Quality Things for Loving Pets</h3>
                             <p>Keeps your Pet Smiling</p>
@@ -152,7 +153,7 @@
             <a href="#">Read More</a>
         </div>
         <div class="aboutus__content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row py-lg-5">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="aboutus__box">
@@ -227,7 +228,7 @@
 
     <!-- Chosse Us -->
     <section class="chosseus">
-        <div class="container py-5">
+        <div class="container-fluid py-5">
             <div class="row">
                 <div class="chosseus__img col-6">
                     <img src="./img/ab.jpg" alt="ab">
@@ -263,7 +264,7 @@
 
     <!-- Counting -->
     <section class="counting">
-        <div class="container py-5">
+        <div class="container-fluid py-5">
             <div class="row ml-auto text-center">
                 <div class="col-3">
                     <span class="counter">730</span><br>
@@ -314,6 +315,9 @@
     <script>
         $('.counter').countUp();
     </script>
+
+    <!-- Main JS -->
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>

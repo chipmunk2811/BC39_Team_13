@@ -31,7 +31,7 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -279,24 +279,24 @@ a{
     align-self: center;
 }
 
-.chosseus__tittle p{
-    line-height: 24.5px;
+.chosseus__tittle p {
+    line-height: 1.5rem;
     color: #696969;
-    margin: 15px 0 35px 0;
+    margin: 0.9375rem 0 2.1875rem 0;
 }
 
-.chosseus__tittle li{
+.chosseus__tittle li {
     line-height: 1.625rem;
     color: #000c04;
-    margin: 15px 0;
+    margin: 0.9375rem 0;
     font-weight: 600;
 }
 
-.chosseus__tittle i{
+.chosseus__tittle i {
     color: #189a46;
-    margin-right: 12px;
+    margin-right: 0.75rem;
     background: rgb(147 107 232 / 5%);
-    font-size: 10px;
+    font-size: 0.625rem;
     padding: 8px;
     border-radius: 50%;
     display: inline-block;
@@ -305,11 +305,11 @@ a{
 
 
 /* Couting */
-.counting{
+.counting {
     background-color: #189a46;
 }
 
-.counting span{
+.counting span {
     font-size: 3.125rem;
     line-height: 3.7rem;
     font-weight: 600;
@@ -317,11 +317,120 @@ a{
     opacity: 1;
 }
 
-.counting p{
+.counting p {
     font-size: 1.25rem;
     line-height: 1.5625rem;
     color: white;
     opacity: 0.8;
     font-weight: 400;
     margin-top: 10px;
+}
+
+
+
+@media (min-width: 250px) {
+
+    html,
+    body {
+        font-size: 5px;
+        line-height: 1.5;
+    }
+
+    h6 {
+        font-size: 6px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    .aboutus__tittle {
+        width: 175px;
+    }
+
+    .carousel-item {
+        height: 55vh;
+    }
+}
+
+@media (min-width: 600px) {
+
+    html,
+    body {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    h6 {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .aboutus__tittle {
+        width: 350px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    html,
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    h6 {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+    }
+
+    .aboutus__tittle {
+        width: 700px;
+    }
+
+    .carousel-item {
+        height: 100vh;
+    }
+}
+
+@media (min-height: 10px){
+    .carousel-item {
+        height: 100vh;
+    }
+}
+@media (min-height: 450px){
+    .carousel-item {
+        height: 100vh;
+    }
+}
+
+@media (min-height: 652px){
+    .carousel-item {
+        height: 60vh;
+    }
+}
+
+@media (min-height: 750px){
+    .carousel-item {
+        height: 40vh;
+    }
 }
