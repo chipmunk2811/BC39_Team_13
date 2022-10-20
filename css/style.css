@@ -72,12 +72,10 @@ header {
 
 .header {
     position: fixed;
-    top: 40px;
-    
+    top: 40px;   
     left: 0;
     right: 0;
     z-index: 1030;
-    height: 80px;
 }
 .nav-fix {
     padding: 0px;
@@ -1216,6 +1214,9 @@ iframe {
         position: absolute;
         top: 18px;
         right: 55px;
+    }
+    .header{
+         height: 90px;    
     }
 }
 
