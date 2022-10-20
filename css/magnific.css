@@ -152,7 +152,7 @@ button::-moz-focus-inner {
     line-height: 44px;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -40px;
     text-decoration: none;
     text-align: center;
     opacity: 0.65;
@@ -173,7 +173,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-close-btn-in .mfp-close {
-    color: #333;
+    color: white;
 }
 
 .mfp-image-holder .mfp-close,
