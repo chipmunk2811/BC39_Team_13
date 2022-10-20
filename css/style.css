@@ -1189,7 +1189,7 @@ iframe {
         height: 90px;
     }
     .nav-fix {
-        height: none;
+        height: 75px;
     }
 }
 
